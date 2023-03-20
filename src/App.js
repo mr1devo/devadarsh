@@ -5,23 +5,21 @@ import Signup from './components/Signup';
 import Navbar from './components/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
+import Sample from './components/pjx/Sample';
+import Table1 from './components/pjx/Table1';
+import State from './components/pjx/State';
+import Count from './components/pjx/Count';
+import Ns from './components/pjx/Ns';
+import Add from './components/pjx/Add';
+import Hai from './components/pjx/Hai';
+import Gus from './components/pjx/Gus';
 
 function App() {
   return (
-   <div className="App">
+    <div className="App">
+      <Gus/>
 
-   <BrowserRouter>
-   <Navbar/>
-   <Routes>
-    <Route path='/' element={<Home/>}>
-    </Route>
-    <Route path='/Login' element={<Login/>}>
-    </Route>
-    <Route path='/Signup' element={<Signup/>}>
-    </Route>
-   </Routes>
-   </BrowserRouter>
-   </div>  );
+    </div>);
 }
 
 export default App;
